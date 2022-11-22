@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #404C51;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+  margin: 5px;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+label {
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+      margin: 0 auto;
+  }
+}
+
+.label {
+  margin: 0.5em;
+}
+
+
+.p-card{
+background-color:#ffff;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  color: #212529;
+  box-shadow: 1px 2px 15px 2px rgb(0 0 0 / 80%);
+  border-radius: 20px;
+}
+
+
+.p-inputtext, .p-button{
+
+  border-radius: 20px;
+}

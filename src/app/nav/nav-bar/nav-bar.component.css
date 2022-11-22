@@ -1,0 +1,48 @@
+.navbar{
+  background-color: #1e94d2;
+  padding: 20px 0 10px;
+}
+
+button {
+  background-color: #1e94d2;
+  border: 0;
+}
+
+button:hover {
+  color: #1e94d2;
+}
+
+.navbar-menu{
+  list-style: none;
+  padding: 20px;
+}
+
+.navbar-usuario{
+  padding: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #525151;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+
+}
+
+.navbar-menuitem {
+  padding: 15px;
+
+}
+
+.navbar-menuitem a {
+  color: #c0bbb7;
+  text-decoration: none;
+
+}
+
+.navbar-menuitem a:hover{
+  color: #fff;
+}
+
+.navbar-menuitem.ativo {
+  background-color: #494541;
+}

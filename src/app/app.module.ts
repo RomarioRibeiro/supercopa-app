@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { PrimengModule } from './primeng.module';
-import { NavBarComponent } from './copa/nav/nav-bar/nav-bar.component';
+import { NavBarComponent } from './nav/nav-bar/nav-bar.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
@@ -15,13 +15,14 @@ import { FormsModule } from '@angular/forms';
 import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
 import { ToastModule } from 'primeng/toast';
-import { CopaService } from './copa/copa.service';
+import { CopaService } from './copa.service';
 import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+
   ],
   imports: [
     BrowserModule,

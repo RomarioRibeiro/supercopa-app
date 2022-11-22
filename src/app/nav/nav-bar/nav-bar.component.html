@@ -1,0 +1,18 @@
+<nav class="navbar">
+  <div class="container">
+    <div class="grid">
+      <div class="col-12">
+        <button pButton (click)="visibleSidebar2 = true" icon="pi pi-bars"></button>
+      </div>
+    </div>
+  </div>
+  <p-sidebar [(visible)]="visibleSidebar2" position="right" [style]="{background: '#3a3633'}"  [baseZIndex]="10000">
+    <ul class="navbar-menu">
+      <li class="navbar-usuario">  </li>
+      <li class="navbar-menuitem" routerLinkActive="ativo"><a routerLink="/copa"> Palpite </a></li>
+      <li class="navbar-menuitem" routerLinkActive="ativo"><a routerLink="/pesquisa"> Pesquisa dos Palpite </a></li>
+
+   <!--    <li class="navbar-menuitem"><a href="">  Logout </a></li> -->
+    </ul>
+  </p-sidebar>
+</nav>

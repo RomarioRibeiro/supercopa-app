@@ -15,8 +15,8 @@ import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
 import {ToastModule} from 'primeng/toast';
 import { AppRoutingModule } from "./app-routing.module";
-import { CopaCadastroComponent } from "./copa/copa-cadastro/copa-cadastro.component";
-import { CopaPesquisaComponent } from "./copa/copa-pesquisa/copa-pesquisa.component";
+import { CopaCadastroComponent } from "./copa-cadastro/copa-cadastro.component";
+import { CopaPesquisaComponent } from "./copa-pesquisa/copa-pesquisa.component";
 
 @NgModule({
     declarations: [

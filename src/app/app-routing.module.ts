@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CopaCadastroComponent } from './copa/copa-cadastro/copa-cadastro.component';
-import { CopaPesquisaComponent } from './copa/copa-pesquisa/copa-pesquisa.component';
+import { CopaCadastroComponent } from './copa-cadastro/copa-cadastro.component';
+import { CopaPesquisaComponent } from './copa-pesquisa/copa-pesquisa.component';
+
 
 const routes: Routes = [
   {

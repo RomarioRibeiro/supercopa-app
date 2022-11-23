@@ -10,6 +10,8 @@ import {InputMaskModule} from 'primeng/inputmask';
 import {SidebarModule} from 'primeng/sidebar';
 import {TableModule} from 'primeng/table';
 
+
+
 import { FormsModule } from "@angular/forms";
 import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
@@ -17,11 +19,13 @@ import {ToastModule} from 'primeng/toast';
 import { AppRoutingModule } from "./app-routing.module";
 import { CopaCadastroComponent } from "./copa-cadastro/copa-cadastro.component";
 import { CopaPesquisaComponent } from "./copa-pesquisa/copa-pesquisa.component";
+import { NavBarComponent } from "./nav/nav-bar/nav-bar.component";
 
 @NgModule({
     declarations: [
       CopaCadastroComponent,
-      CopaPesquisaComponent
+      CopaPesquisaComponent,
+      NavBarComponent,
 
 
     ],
@@ -38,7 +42,8 @@ import { CopaPesquisaComponent } from "./copa-pesquisa/copa-pesquisa.component";
         FormsModule,
         MessagesModule,
         MessageModule,
-        ToastModule
+        ToastModule,
+        AppRoutingModule
     ]
 })
 

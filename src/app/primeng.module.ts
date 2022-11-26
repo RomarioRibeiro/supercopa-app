@@ -1,3 +1,4 @@
+import { NavBarComponent } from './nav/nav-bar/nav-bar.component';
 import { NgModule } from "@angular/core";
 
 
@@ -19,22 +20,15 @@ import {ToastModule} from 'primeng/toast';
 import { AppRoutingModule } from "./app-routing.module";
 import { CopaCadastroComponent } from "./copa-cadastro/copa-cadastro.component";
 import { CopaPesquisaComponent } from "./copa-pesquisa/copa-pesquisa.component";
-<<<<<<< HEAD
 import { CopaPalpiteComponent } from "./copa-palpite/copa-palpite.component";
-=======
-import { NavBarComponent } from "./nav/nav-bar/nav-bar.component";
->>>>>>> cc15fcb9e92f030a00a11eb7b9998050fb2874ea
 
 @NgModule({
     declarations: [
       CopaCadastroComponent,
       CopaPesquisaComponent,
-<<<<<<< HEAD
-      CopaPalpiteComponent
+      CopaPalpiteComponent,
+      NavBarComponent
 
-=======
-      NavBarComponent,
->>>>>>> cc15fcb9e92f030a00a11eb7b9998050fb2874ea
 
 
     ],

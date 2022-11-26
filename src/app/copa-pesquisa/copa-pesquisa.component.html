@@ -36,6 +36,9 @@
                <!--  <td>{{colaborador.cpf}} </td> -->
                 <td>{{colaborador.favor}}</td>
                 <td>{{colaborador.contra}}</td>
+                <td>
+                  <button pButton icon="pi pi-trash" pTooltip="Excluir" tooltipPosition="top" (click)="confimacaoExclusao(colaborador)"></button>
+                </td>
             </tr>
         </ng-template>
 

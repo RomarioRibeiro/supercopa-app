@@ -90,6 +90,13 @@ buscarPorCodigo(codigo: number): Promise<Colaborador> {
 
 }
 
+excluir(codigo: number): Promise<any> {
+
+
+  return this.http.delete(`${this.colaboradorURL}/${codigo}`)
+  .toPromise()
+  .then(() => null);
+}
 
 
 }

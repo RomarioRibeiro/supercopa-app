@@ -1,5 +1,6 @@
+import { Colaborador } from 'src/app/core/colaborador.model';
 import { Component, ViewChild } from '@angular/core';
-import { LazyLoadEvent, MessageService } from 'primeng/api';
+import { ConfirmationService, LazyLoadEvent, MessageService } from 'primeng/api';
 import { Table } from 'primeng/table';
 import { ErroHandlerService } from 'src/app/core/erro-handler.service';
 import { colaboradorFiltro, CopaService } from '../copa.service';
@@ -17,10 +18,13 @@ export class CopaPesquisaComponent {
   filtro = new colaboradorFiltro();
 
   @ViewChild('tabela') grid!: Table;
+  errorHandlerService: any;
   constructor(
     private colaboradorService: CopaService,
     private erroHandler: ErroHandlerService,
     private messagemService: MessageService,
+    private confimationService: ConfirmationService,
+
 
   ) { }
 
@@ -54,5 +58,26 @@ export class CopaPesquisaComponent {
       this.pesquisar(pagina);
     }
 
+    confimacaoExclusao(colaborador: any) {
+      this.confimationService.confirm({
+        message: 'Tem certeza que deseja excluir?',
+        accept: () => {
+          this.excluir(colaborador);
+        }
+      })
+    }
+
+    excluir(colaborador: any) {
+      this.colaboradorService.excluir(colaborador.codigo)
+      .then(() =>{
+        if (this.grid.first === 0) {
+          this.pesquisar();
+        } else {
+          this.grid.reset();
+        }
+        this.messagemService.add({ severity: 'success', detail: 'Lançamento excluído com sucesso!' })
+    })
+
+    }
 
 }

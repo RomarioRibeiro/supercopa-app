@@ -17,6 +17,8 @@ import { MessageModule } from 'primeng/message';
 import { ToastModule } from 'primeng/toast';
 import { CopaService } from './copa.service';
 import { ConfirmationService, MessageService } from 'primeng/api';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { ConfirmationService, MessageService } from 'primeng/api';
     MessagesModule,
     MessageModule,
     ToastModule,
+    ConfirmDialogModule,
 
 
     ServiceWorkerModule.register('ngsw-worker.js', {

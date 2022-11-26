@@ -27,13 +27,14 @@ import { CopaPalpiteComponent } from "./copa-palpite/copa-palpite.component";
       CopaCadastroComponent,
       CopaPesquisaComponent,
       CopaPalpiteComponent,
-      NavBarComponent
+      NavBarComponent,
+
 
 
 
     ],
     providers: [CopaPesquisaComponent,CopaCadastroComponent],
-    exports: [CopaCadastroComponent,CopaPesquisaComponent],
+    exports: [CopaCadastroComponent,CopaPesquisaComponent,],
     imports: [
         CardModule,
         InputNumberModule,

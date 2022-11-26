@@ -16,7 +16,7 @@ import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
 import { ToastModule } from 'primeng/toast';
 import { CopaService } from './copa.service';
-import { MessageService } from 'primeng/api';
+import { ConfirmationService, MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -47,7 +47,8 @@ import { MessageService } from 'primeng/api';
   ],
   providers: [CopaService,
     MessageService,
-    AppRoutingModule],
+    AppRoutingModule,
+    ConfirmationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

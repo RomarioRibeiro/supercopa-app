@@ -1,4 +1,4 @@
-
+<app-nav-bar></app-nav-bar>
 
 <div class="container">
   <form (ngSubmit)="pesquisar()"  >
@@ -24,7 +24,7 @@
         <ng-template pTemplate="header">
             <tr>
                 <th>Nome</th>
-                <th>CPF</th>
+                <!-- <th>CPF</th> -->
 
                 <th>Brasil</th>
                 <th>Sérvia</th>
@@ -33,7 +33,7 @@
         <ng-template pTemplate="body" let-colaborador>
             <tr>
                 <td>{{colaborador.nome}}</td>
-                <td>{{colaborador.cpf}}</td>
+               <!--  <td>{{colaborador.cpf}} </td> -->
                 <td>{{colaborador.favor}}</td>
                 <td>{{colaborador.contra}}</td>
             </tr>

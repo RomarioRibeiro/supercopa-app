@@ -6,7 +6,7 @@
     </ng-template>
     <div class="grid p-fluid">
       <div class="col-12 md:col-6 p-fluid">
-        <input type="text" pInputText placeholder="Nome"  name="nome" #nome="ngModel" required minlength="5" [(ngModel)]="colaborador.nome" />
+        <input type="text" pInputText placeholder="Nome"  name="nome" #nome="ngModel" required minlength="5" [(ngModel)]="colaborador.nome"  />
       </div>
       <div class="col-12 md:col-6 p-fluid">
         <p-inputMask
@@ -23,8 +23,8 @@
         <label>Vs</label>
 
         <div class="col-12 md:col-3 p-fluid">
-          <img src="assets/img/servia.png" alt="" width="60" />
-          <p-inputNumber placeholder="Sérvia" name="contra" #nome="ngModel" [required]="true" minlength="5" [(ngModel)]="colaborador.contra" ></p-inputNumber>
+          <img src="assets/img/suiça.png" alt="" width="60" />
+          <p-inputNumber placeholder="Suiça" name="contra" #nome="ngModel" [required]="true" minlength="5" [(ngModel)]="colaborador.contra" ></p-inputNumber>
         </div>
       </div>
 

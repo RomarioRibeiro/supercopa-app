@@ -17,11 +17,14 @@ import {ToastModule} from 'primeng/toast';
 import { AppRoutingModule } from "./app-routing.module";
 import { CopaCadastroComponent } from "./copa-cadastro/copa-cadastro.component";
 import { CopaPesquisaComponent } from "./copa-pesquisa/copa-pesquisa.component";
+import { CopaPalpiteComponent } from "./copa-palpite/copa-palpite.component";
 
 @NgModule({
     declarations: [
       CopaCadastroComponent,
-      CopaPesquisaComponent
+      CopaPesquisaComponent,
+      CopaPalpiteComponent
+
 
 
     ],

@@ -3,19 +3,20 @@ import { NgForm } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
-import { Colaborador } from 'src/app/core/colaborador.model';
-import { ErroHandlerService } from 'src/app/core/erro-handler.service';
 import { CopaService } from '../copa.service';
+import { Colaborador } from '../core/colaborador.model';
+import { ErroHandlerService } from '../core/erro-handler.service';
 
 @Component({
-  selector: 'app-copa-cadastro',
-  templateUrl: './copa-cadastro.component.html',
-  styleUrls: ['./copa-cadastro.component.css']
+  selector: 'app-copa-palpite',
+  templateUrl: './copa-palpite.component.html',
+  styleUrls: ['./copa-palpite.component.css']
 })
-export class CopaCadastroComponent {
-
+export class CopaPalpiteComponent {
 
   colaborador = new Colaborador();
+
+
 
   constructor(
     private colaboradorService: CopaService,
@@ -25,6 +26,8 @@ export class CopaCadastroComponent {
     private title: Title,
     private erroHandler: ErroHandlerService,
   ) { }
+
+
 
   ngOnInit(): void {
 
@@ -36,7 +39,6 @@ export class CopaCadastroComponent {
       this.carregarPessoa(codigoPessoa);
     }
   }
-
 
   get editando() {
     return Boolean(this.colaborador.codigo)

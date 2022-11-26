@@ -16,7 +16,8 @@ export class colaboradorFiltro {
 export class CopaService {
 
 
-  colaboradorURL = 'https://supercopa-api.herokuapp.com/colaboradores';
+  //colaboradorURL = 'https://supercopa-api.herokuapp.com/colaboradores';
+  colaboradorURL = 'http://localhost:8080/colaboradores';
 
   constructor(
     private http: HttpClient,
